@@ -1,6 +1,6 @@
 
 # app_main.py - Minimal FastAPI backend that talks to Supabase
-from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Depends
+from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Depends, Query
 from fastapi.middleware.cors import CORSMiddleware
 from supabase import create_client, Client
 import os, datetime as dt
