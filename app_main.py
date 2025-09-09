@@ -144,7 +144,7 @@ def listar_vacaciones(user_id: str, limit: int = 100):
     return res.data
 
 # -------- BAJAS --------
-@app.post("/bajas")
+@app.get("/bajas")
 async def crear_baja(
     user_id: str = Form(...),
     tipo: str = Form(...),
